@@ -176,6 +176,3 @@ when done, issue a pull request to your own repo and send the link to the pull r
 - **Deletion with Confirmation**
   - Add a delete button next to the edit button on `CustomerListPage` to enable user deletion.
   - Implement an `onTapDelete` function that removes the user from both the local storage and Firestore. Ensure a confirmation dialog is shown before proceeding with the deletion.
-
-These enhancements aim to improve the overall user experience and reliability of the application, making it more intuitive and resilient.
-
