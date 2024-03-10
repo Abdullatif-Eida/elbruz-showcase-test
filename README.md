@@ -20,7 +20,7 @@ This command comes useful when you want to make sure your code is clean and read
 
 - runs `flutter analyze`
 
-- runs[dart run build_runner build](https://dart.dev/tools/build_runner)
+- runs [dart run build_runner build](https://dart.dev/tools/build_runner)
 - general-purpose commands for generating files
 
 ## Structure Overview
@@ -137,36 +137,45 @@ please fork this repo to your own space and complete the task there on a separat
 when done, issue a pull request to your own repo and send the link to the pull request in your own repo. NOTE: do not open pull request to the upstream repository (`Elbruz Technologies/flutter-showcase-test`)
 
 
-### Task
+### Tasks
 
-familiarize yourself with `README.md` file and the architecture description briefly
+### Customer List Page
 
-inside `CustomerListPage` apply a widget to display pull to refresh functionality using `pull_to_refresh` package 
+- **Pull to Refresh**
+  - Implement a widget using the `pull_to_refresh` package to enable pull-to-refresh functionality on the `CustomerListPage`.
 
-inside `CustomerListPage` let the page show no data if the list is empty. use `no-result.svg` as image to display no data with text and a button to add new customer
+- **Empty List Placeholder**
+  - Display a "No Data" message with an `no-result.svg` image when the customer list is empty. Include a button to navigate the user to `SaveCustomerPage` for adding a new customer.
 
-inside `CustomerListController` add `onTapNewCustomer` function responsible to navigate the user to `SaveCustomerPage`
+- **Floating Action Button**
+  - Add a floating action button to `CustomerListPage` that navigates the user to `SaveCustomerPage` for adding new customers.
 
-inside `CustomerListPage` add `floatingActionButton` that navigate to `SaveCustomerPage`
+### Customer List Controller
 
-inside `SaveCustomerPage` add text field validations for these fields `Last Name`
+- **New Customer Navigation**
+  - Implement an `onTapNewCustomer` function to navigate the user to `SaveCustomerPage`.
 
-`Last Name` Should be min Length 2 and max Length 40
+### Save Customer Page
 
-inside `SaveCustomerPage` add `Birth Date` Picker to let user enter his birth date and display it in Customer List row
+- **Last Name Validation**
+  - Add text field validation for the Last Name field, requiring a minimum length of 2 characters and a maximum length of 40 characters.
 
-inside `SaveCustomerPage` give the user the ability to pick between all countires in phone field 
+- **Birth Date Picker**
+  - Integrate a Birth Date Picker to allow users to enter their birth date, which will be displayed in the customer list row.
 
-inside `SaveCustomerPage` when press on `Save` button the user will added to localy your task is to add the user inside the `Firestore`
+- **Phone Field Country Selection**
+  - Enable users to pick from all countries in the phone field to enhance user input accuracy.
 
-while add user is working, show `CircularProgressIndicator` in place of save button.
+- **Firestore Integration and Feedback**
+  - Upon pressing the Save button, add the new user to Firestore. Show a `CircularProgressIndicator` while the save operation is in progress.
+  - Display a success dialog if the user is added successfully.
+  - Show an error dialog in case of a failure, ensuring the application handles errors gracefully without crashing.
 
-if the user added successfully, show success dialog
+### Customer Deletion
 
-if save fails, show error dialog and apply `Error Handling` to enusre no error will stop or crash the app 
+- **Deletion with Confirmation**
+  - Add a delete button next to the edit button on `CustomerListPage` to enable user deletion.
+  - Implement an `onTapDelete` function that removes the user from both the local storage and Firestore. Ensure a confirmation dialog is shown before proceeding with the deletion.
 
-inside `CustomerListPage` add `delete` button beide the edit button to remove the user 
+These enhancements aim to improve the overall user experience and reliability of the application, making it more intuitive and resilient.
 
-to `delete` the user make a function called `onTapDelete` and do not forget to use `showConfirmDialog` befote the deletion process
-
-when `onTapDelete` excute remove the user from locale and from `Firestore`
