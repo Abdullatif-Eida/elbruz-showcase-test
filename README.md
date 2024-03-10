@@ -1,6 +1,6 @@
-# Flutter showcase test demo
+# Flutter showcase test
 
-Flutter project for the Demo architecture
+Flutter project for the architecture
 
 ## Setup
 
