@@ -2,48 +2,6 @@
 
 Flutter project for the Demo architecture
 
-<!-- TOC -->
-
-- [Flutter architecture demo](#flutter-architecture-demo)
-    - [Setup](#setup)
-    - [Architecture](#architecture)
-        - [UI](#ui)
-        - [Presentation](#presentation)
-        - [Domain](#domain)
-        - [Data](#data)
-        - [Navigation](#navigation)
-            - [Navigator](#navigator)
-            - [Route](#route)
-            - [AppNavigator class](#appnavigator-class)
-        - [Example](#example)
-    - [Tools](#tools)
-        - [FVM](#fvm)
-        - [Code templates](#code-templates)
-            - [Mason commands](#mason-commands)
-        - [Custom lints](#custom-lints)
-        - [Fluttergen](#fluttergen)
-        - [Dart code metrics](#dart-code-metrics)
-        - [Fastlane](#fastlane)
-    - [Code best practices & guidelines](#code-best-practices--guidelines)
-        - [Pull Requests checklist](#pull-requests-checklist)
-        - [General](#general)
-        - [UseCase](#usecase)
-        - [Repository](#repository)
-        - [Failures](#failures)
-            - [Example](#example)
-        - [Domain entity](#domain-entity)
-            - [Example](#example)
-        - [Presenter](#presenter)
-        - [ViewModel](#viewmodel)
-        - [PresentationModel](#presentationmodel)
-        - [Page](#page)
-        - [Json classes](#json-classes)
-            - [Example](#example)
-    - [Collaborating guidelines](#collaborating-guidelines)
-        - [New libraries](#new-libraries)
-
-<!-- TOC -->
-
 ## Setup
 
 1. Install [flutter_gen](https://pub.dev/packages/flutter_gen) in your system and run:
