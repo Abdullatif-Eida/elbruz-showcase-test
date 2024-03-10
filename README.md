@@ -195,5 +195,3 @@ inside `CustomerListPage` add `delete` button beide the edit button to remove th
 to `delete` the user make a function called `onTapDelete` and do not forget to use `showConfirmDialog` befote the deletion process
 
 when `onTapDelete` excute remove the user from locale and from `Firestore`
-#   e l b r u z - s h o w c a s e - t e s t  
- 
