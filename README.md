@@ -4,7 +4,7 @@ Flutter project for the architecture
 
 ## Setup
 
-1. Install [flutter_gen](https://pub.dev/packages/flutter_gen) in your system and run:
+1. Run:
 
    ```bash  
    flutter pub get
@@ -149,8 +149,6 @@ when done, issue a pull request to your own repo and send the link to the pull r
 
 - **Floating Action Button**
   - Add a floating action button to `CustomerListPage` that navigates the user to `SaveCustomerPage` for adding new customers.
-
-### Customer List Controller
 
 - **New Customer Navigation**
   - Implement an `onTapNewCustomer` function to navigate the user to `SaveCustomerPage`.
